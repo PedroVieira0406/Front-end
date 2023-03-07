@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site HTML</title>
+    <style>
+        body{
+            background-color: rgb(102, 102, 240);}
+    </style>
+</head>
+<body>
+    <h2>Hello World</h2>
+    <hr>
+    <h1> x1 lixo? </n1>
+    <hr>
+    <img src=https://media.tenor.com/iGXkv2wLOYoAAAAd/yasuo-zed.gif alt="">
+    <hr>
+    mono yago desde o beta
+    <hr>
+</body>
+</html>
