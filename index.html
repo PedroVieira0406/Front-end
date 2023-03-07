@@ -7,28 +7,54 @@
     <title>Inscrição Voluntários</title>
     <style>
         body{
-            background-color: rgb(104, 99, 172);}
+            background-color: rgb(106, 189, 228);}
     </style>
 </head>
+
 <body>
     <h2><b>INSCRIÇÃO DE VOLUNTÁRIO</b><br>
      PEQUENO COTOLENGO DE PALMAS</h2>
+
     <h4>💒Organização sem fins lucrativos <br>
         ❤ Nossa missão é acolher e cuidar de jovens e adultos com Deficiência Intelectual<br>
         ☎ <a href="https://api.whatsapp.com/send/?
     phone=5563981485588&text&type=phone_number&app_absent=0
     ">Entre em contato via Whatsapp</a> <br>
     <a href=" https://www.instagram.com/pequenocotolengo_">@pequenocotolengo_ </a></h4>
-    <h5><color></color></h5>
-   <ol>
-    <li>NOME COMPLETO: *</li>
-    <li>ENDEREÇO:</li>
-    <li>TELEFONE: *</li>
-    <li>INSTAGRAM</li>
-    <li>ANIVERSÁRIO: *</li>
-    <li>ÁREAS DE ATUAÇÃO: *</li>
-    <li>DISPONIBILIDADE:</li>
-    <li>OBSERVAÇÃO QUANTO A RESPOSTA ANTERIOR</li>
-   </ol>
+    <h5>*Obrigatório</h5>
+
+    <form action="formulario.html" method="get">
+        <ol>
+            <li>
+                <label for="nome">Nome Completo:*</label><br>
+                <input type="text" name="nome" id="nome" required>
+            </li>
+            <li>
+                <label for="endereço">Endereço Completo:</label><br>
+                <input type="text" name="endereço" id="endereço"></li>
+
+            <li>
+                <label for="Telefone">Telefone Completo:*</label><br>
+                <input type="number" name="Telefone" id="Telefone" required>
+            </li>
+
+            <li>
+                <label for="Instagram">Instagram Completo:</label><br>
+                <input type="text" name="Instagram" id="Instagram">
+            </li>
+
+            <li>
+                <label for="Aniversário">Aniversário completo*</label><br>
+                <input type="text" name="Aniversário" id="Aniversário" required>
+            </li>
+            <li>ÁREA DE ATUAÇÃO*</li>  
+
+            <li>DISPONIBILIDADE:</li>
+
+            <li>OBSERVAÇÃO QUANTO A RESPOSTA ANTERIOR</li>
+        </ol>
+            <button type="reset">Resetar</button>
+            <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
