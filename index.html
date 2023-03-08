@@ -35,7 +35,7 @@
 
             <li>
                 <label for="Telefone">Telefone Completo:*</label><br>
-                <input type="number" name="Telefone" id="Telefone" required>
+                <input type="tel" name="Telefone" id="Telefone" required>
             </li>
 
             <li>
@@ -47,14 +47,92 @@
                 <label for="Aniversário">Aniversário completo*</label><br>
                 <input type="text" name="Aniversário" id="Aniversário" required>
             </li>
-            <li>ÁREA DE ATUAÇÃO*</li>  
+            <br>
+            <li>ÁREA DE ATUAÇÃO*</li>
+            <h5>Marque todas que se aplicam.</h5>
 
+            <input type="checkbox" name="COMUNICAÇÃO" id="COMUNICAÇÃO" value="possivel área de atuação">
+            <label for="COMUNICAÇÃO">COMUNICAÇÃO</label><br>
+
+            <input type="checkbox" name="QUITANDA" id="QUITANDA" value="possivel área de atuação">
+            <label for="QUITANDA">QUITANDA</label><br>
+
+            <input type="checkbox" name="BAZAR" id="BAZAR" value="possivel área de atuação">
+            <label for="BAZAR">BAZAR</label><br>
+
+            <input type="checkbox" name="TELEMARKETING" id="TELEMARKETING" value="possivel área de atuação">
+            <label for="TELEMARKETING">TELEMARKETING</label><br>
+
+            <input type="checkbox" name="GESTÃO" id="GESTÃO" value="possivel área de atuação">
+            <label for="GESTÃO">GESTÃO DE PROJETOS E CAPTAÇÃO DE RECURSOS</label><br>
+
+            <input type="checkbox" name="FISIOTERAPEUTA" id="FISIOTERAPEUTA" value="possivel área de atuação">
+            <label for="FISIOTERAPEUTA">FISIOTERAPEUTA</label><br>
+
+            <input type="checkbox" name="PSICÓLOGO (A)" id="PSICÓLOGO (A)" value="possivel área de atuação">
+            <label for="PSICÓLOGO (A)">PSICÓLOGO (A)</label><br>
+
+            <input type="checkbox" name="EDUCAÇÃO FÍSICA" id="EDUCAÇÃO FÍSICA" value="possivel área de atuação">
+            <label for="EDUCAÇÃO FÍSICA">PROFISSIONAL DE EDUCAÇÃO FÍSICA</label><br>
+
+            <input type="checkbox" name="ENFERMEIRA (0)" id="ENFERMEIRA (0)" value="possivel área de atuação">
+            <label for="ENFERMEIRA (0)">ENFERMEIRA (0)</label><br>
+
+            <input type="checkbox" name="ENFERMAGEM" id="ENFERMAGEM" value="possivel área de atuação">
+            <label for="ENFERMAGEM">TÉCNICO DE ENFERMAGEM</label><br>
+
+            <input type="checkbox" name="LIMPEZA" id="LIMPEZA" value="possivel área de atuação">
+            <label for="LIMPEZA">AUXILIAR DE LIMPEZA</label><br>
+
+            <input type="checkbox" name="MONITORIA" id="MONITORIA" value="possivel área de atuação">
+            <label for="MONITORIA">MONITORIA</label><br>
+
+            <input type="checkbox" name="TRANSPORTES" id="TRANSPORTES" value="possivel área de atuação">
+            <label for="TRANSPORTES">TRANSPORTES</label><br>
+
+            <input type="checkbox" name="FONOAUDIÓLOGA (O)" id="FONOAUDIÓLOGA (O)" value="possivel área de atuação">
+            <label for="FONOAUDIÓLOGA (O)">FONOAUDIÓLOGA (O)</label><br>
+
+            <input type="checkbox" name="OUTROS" id="OUTROS" value="possivel área de atuação">
+            <label for="OUTROS">OUTROS</label>
+            <br><br>
             <li>DISPONIBILIDADE:</li>
+            <h5>Marque todas que se aplicam.</h5> 
+            
+            <input type="checkbox" name="SEGUNDA" id="SEGUNDA" value="está disponivel">
+            <label for="SEGUNDA">SEGUNDA</label><br>
 
-            <li>OBSERVAÇÃO QUANTO A RESPOSTA ANTERIOR</li>
+            <input type="checkbox" name="TERÇA" id="TERÇA" value="está disponivel">
+            <label for="TERÇA">TERÇA</label><br>
+
+            <input type="checkbox" name="QUARTA" id=QUARTA" value="está disponivel">
+            <label for="QUARTA">QUARTA</label><br>
+
+            <input type="checkbox" name="QUINTA" id="QUINTA" value="está disponivel">
+            <label for="QUINTA">QUINTA</label><br>
+
+            <input type="checkbox" name="SEXTA" id="SEXTA" value="está disponivelo">
+            <label for="SEXTA">SEXTA</label><br>
+
+            <input type="checkbox" name="SÁBADO" id="SÁBADO" value="está disponivel">
+            <label for="SÁBADO">SÁBADO</label><br>
+
+            <input type="checkbox" name="DOMINGO" id="DOMINGO" value="está disponivel">
+            <label for="DOMINGO">DOMINGO</label>
+            
+            <br><br>
+
+            <li>
+                <label for="observação">OBSERVAÇÃO QUANTO A RESPOSTA ANTERIOR:</label><br>
+                <input type="text" name="observação" size="200" id="observação">
+
+            </li>
+
         </ol>
+
             <button type="reset">Resetar</button>
             <button type="submit">Enviar</button>
+
     </form>
 </body>
 </html>
