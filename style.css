@@ -1,0 +1,73 @@
+body{
+    color: black;
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    margin: 0;
+}
+
+ul{
+    padding: 0%;
+}
+h5{
+    margin: 0%;
+}
+h6{
+    color: red;
+}
+.perguntas{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+
+}
+.grupo1{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(248, 177, 91, 0.822);
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: 0px 10px 40px #00000056 ;
+}
+
+.grupo2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(248, 177, 91, 0.822);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0px 10px 40px #00000056 ;
+}
+
+.grupo3{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(248, 177, 91, 0.822);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 10px 40px #00000056 ;
+    width: 300px;
+}
+.botão{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.grupo1>input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: coral;
+}
