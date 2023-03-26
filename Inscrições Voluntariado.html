@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link href="formulário.css" rel="stylesheet">
+
+    <link href="formulario.html" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscrição Voluntários</title>
     <style>
-        body{
-            background-color: rgb(106, 189, 228);}
     </style>
 </head>
 
@@ -22,128 +23,139 @@
         <a href="https://api.whatsapp.com/send/?phone=5563981485588&text&type=phone_number&app_absent=0">Entre em contato via Whatsapp</a> <br>
         <a href=" https://www.instagram.com/pequenocotolengo_">@pequenocotolengo_ </a>
     </h4>
-    
-    <h5>*Obrigatório</h5>
 
     <form action="formulario.html" method="get">
-        <ol>
-            <li>
-                <label for="nome">Nome Completo:*</label><br>
-                <input type="text" name="Nome" id="nome" placeholder="Digite seu Nome completo" required>
-            </li>
-            <li>
-                <label for="endereço">Endereço Completo:</label><br>
-                <input type="text" name="Endereço" id="endereço" placeholder="Digite seu Endereço"></li>
+        <div class="perguntas">
+        <div class="grupo1"> 
+        
+        <h6>*Obrigatório</h6>
 
-            <li>
-                <label for="Telefone">Telefone Completo:*</label><br>
-                <input type="tel" name="Telefone" id="Telefone" placeholder="Digite seu Telefone" required>
-            </li>
+    <div class="botão"> 
+        <li>
+            <label for="nome">Nome Completo:*</label><br>
+            <input type="text" name="Nome" id="nome" placeholder="Digite seu Nome Completo" required>
+        </li>
 
-            <li>
-                <label for="Instagram">Instagram Completo:</label><br>
-                <input type="text" name="Instagram" id="Instagram" placeholder="Digite seu Instagram">
-            </li>
+        <li>
+            <label for="endereço">Endereço Completo:</label><br>
+            <input type="text" name="Endereço" id="endereço" placeholder="Digite seu Endereço"></li>
+        
+        <li>
+            <label for="Telefone">Telefone Completo:*</label><br>
+            <input type="tel" name="Telefone" id="Telefone" placeholder="Digite seu Telefone" required>
+        </li>
 
-            <li>
-                <label for="Email">Email completo*</label><br>
-                <input type="email" name="Email" id="AEmail" placeholder="Digite seu Email" required>
-            </li>
+        <li>
+            <label for="Instagram">Instagram Completo:</label><br>
+            <input type="text" name="Instagram" id="Instagram" placeholder="Digite seu Instagram">
+        </li>
 
-            <li>
-                <label for="Aniversário">Aniversário completo*</label><br>
-                <input type="date" name="Aniversário" id="Aniversário" required>
-            </li>
- 
-            <br>
+        <li>
+            <label for="Email">Email completo*</label><br>
+            <input type="email" name="Email" id="AEmail" placeholder="Digite seu Email" required>
+        </li>
 
-            <li>ÁREA DE ATUAÇÃO*</li>
-            <h5>Marque todas que se aplicam.</h5>
+        <li>
+            <label for="Aniversário">Aniversário completo*</label><br>
+            <input type="date" name="Aniversário" id="Aniversário" required>
+        </li>
+        </div> 
+        </div>
+        
+        <br>
 
-                <input type="checkbox" name="Comunicação" id="Comunicação" value="possivel área de atuação">
-                <label for="Comunicação">Comunicação</label><br>
+       
+        <div class="grupo2"> 
+        <li>ÁREA DE ATUAÇÃO*</li>
+        <h5>Marque todas que se aplicam.</h5>
+        <ul>
+        
+            <input type="checkbox" name="Comunicação" id="Comunicação" value="possivel área de atuação">
+            <label for="Comunicação">Comunicação</label><br>
 
-                <input type="checkbox" name="Quitanda" id="Quitanda" value="possivel área de atuação">
-                <label for="Quitanda">Quitanda</label><br>
+            <input type="checkbox" name="Quitanda" id="Quitanda" value="possivel área de atuação">
+            <label for="Quitanda">Quitanda</label><br>
 
-                <input type="checkbox" name="Bazar" id="Bazar" value="possivel área de atuação">
-                <label for="Bazar">Bazar</label><br>
+            <input type="checkbox" name="Bazar" id="Bazar" value="possivel área de atuação">
+            <label for="Bazar">Bazar</label><br>
 
-                <input type="checkbox" name="Telemarketing" id="Telemarketing" value="possivel área de atuação">
-                <label for="Telemarketing">Telemarketing</label><br>
+            <input type="checkbox" name="Telemarketing" id="Telemarketing" value="possivel área de atuação">
+            <label for="Telemarketing">Telemarketing</label><br>
 
-                <input type="checkbox" name="Gestão" id="Gestão" value="possivel área de atuação">
-                <label for="Gestão">Gestão de projetos e capactação de recurso</label><br>
+            <input type="checkbox" name="Gestão" id="Gestão" value="possivel área de atuação">
+            <label for="Gestão">Gestão de projetos e capactação de recurso</label><br>
 
-                <input type="checkbox" name="Fisioterapeuta" id="Fisioterapeuta" value="possivel área de atuação">
-                <label for="Fisioterapeuta">Fisioterapeuta</label><br>
+            <input type="checkbox" name="Fisioterapeuta" id="Fisioterapeuta" value="possivel área de atuação">
+            <label for="Fisioterapeuta">Fisioterapeuta</label><br>
 
-                <input type="checkbox" name="Psicólogo (a)" id="Psicólogo (a)" value="possivel área de atuação">
-                <label for="Psicólogo (a)">Psicólogo (a)</label><br>
+            <input type="checkbox" name="Psicólogo (a)" id="Psicólogo (a)" value="possivel área de atuação">
+            <label for="Psicólogo (a)">Psicólogo (a)</label><br>
 
-                <input type="checkbox" name="Proficional de educação física" id="Proficional de educação física" value="possivel área de atuação">
-                <label for="Proficional de educação física">Proficional de educação física</label><br>
+            <input type="checkbox" name="Proficional de educação física" id="Proficional de educação física" value="possivel área de atuação">
+            <label for="Proficional de educação física">Proficional de educação física</label><br>
 
-                <input type="checkbox" name="Enfermeira (o)" id="Enfermeira (o)" value="possivel área de atuação">
-                <label for="Enfermeira (o)">Enfermeira (o)</label><br>
+            <input type="checkbox" name="Enfermeira (o)" id="Enfermeira (o)" value="possivel área de atuação">
+            <label for="Enfermeira (o)">Enfermeira (o)</label><br>
 
-                <input type="checkbox" name="Técnico de enfermagem" id="Técnico de enfermagem" value="possivel área de atuação">
-                <label for="Técnico de enfermagem">Técnico de enfermagem</label><br>
+            <input type="checkbox" name="Técnico de enfermagem" id="Técnico de enfermagem" value="possivel área de atuação">
+            <label for="Técnico de enfermagem">Técnico de enfermagem</label><br>
 
-                <input type="checkbox" name="Auxiliar de limpesa" id="Auxiliar de limpesa" value="possivel área de atuação">
-                <label for="Auxiliar de limpesa">Auxiliar de limpesa</label><br>
+            <input type="checkbox" name="Auxiliar de limpesa" id="Auxiliar de limpesa" value="possivel área de atuação">
+            <label for="Auxiliar de limpesa">Auxiliar de limpesa</label><br>
 
-                <input type="checkbox" name="Monitoria" id="Monitoria" value="possivel área de atuação">
-                <label for="Monitoria">Monitoria</label><br>
+            <input type="checkbox" name="Monitoria" id="Monitoria" value="possivel área de atuação">
+            <label for="Monitoria">Monitoria</label><br>
 
-                <input type="checkbox" name="Transportes" id="Transportes" value="possivel área de atuação">
-                <label for="Transportes">Transportes</label><br>
+            <input type="checkbox" name="Transportes" id="Transportes" value="possivel área de atuação">
+            <label for="Transportes">Transportes</label><br>
 
-                <input type="checkbox" name="Fonoaudióloga (o)" id="Fonoaudióloga (o)" value="possivel área de atuação">
-                <label for="Fonoaudióloga (o)">Fonoaudióloga (o)</label><br>
+            <input type="checkbox" name="Fonoaudióloga (o)" id="Fonoaudióloga (o)" value="possivel área de atuação">
+            <label for="Fonoaudióloga (o)">Fonoaudióloga (o)</label><br>
 
-                <input type="checkbox" name="Outros" id="Outros" value="possivel área de atuação">
-                <label for="Outros">Outros</label>
+            <input type="checkbox" name="Outros" id="Outros" value="possivel área de atuação">
+            <label for="Outros">Outros</label>
 
-            <br><br>
+            </div>
+        </ul>
+        <br><br>
 
-            <li>DISPONIBILIDADE:</li>
-            <h5>Marque todas que se aplicam.</h5> 
-            
-                <input type="checkbox" name="Segunda" id="Segunda" value="está disponivel">
-                <label for="Segunda">Segunda</label><br>
+        <div class="grupo3"> 
+        <li>DISPONIBILIDADE:</li>
+        <h5>Marque todas que se aplicam.</h5> 
+        <ul>
 
-                <input type="checkbox" name="Terça" id="Terça" value="está disponivel">
-                <label for="Terça">Terça</label><br>
+            <input type="checkbox" name="Segunda" id="Segunda" value="está disponivel">
+            <label for="Segunda">Segunda</label><br>
 
-                <input type="checkbox" name="Quarta" id="Quarta" value="está disponivel">
-                <label for="Quarta">Quarta</label><br>
+            <input type="checkbox" name="Terça" id="Terça" value="está disponivel">
+            <label for="Terça">Terça</label><br>
 
-                <input type="checkbox" name="Quinta" id="Quinta" value="está disponivel">
-                <label for="Quinta">Quinta</label><br>
+            <input type="checkbox" name="Quarta" id="Quarta" value="está disponivel">
+            <label for="Quarta">Quarta</label><br>
 
-                <input type="checkbox" name="Sexta" id="Sexta" value="está disponivel">
-                <label for="Sexta">Sexta</label><br>
+            <input type="checkbox" name="Quinta" id="Quinta" value="está disponivel">
+            <label for="Quinta">Quinta</label><br>
 
-                <input type="checkbox" name="Sábado" id="Sábado" value="está disponivel">
-                <label for="Sábado">Sábado</label><br>
+            <input type="checkbox" name="Sexta" id="Sexta" value="está disponivel">
+            <label for="Sexta">Sexta</label><br>
 
-                <input type="checkbox" name="Domingo" id="Domingo" value="está disponivel">
-                <label for="Domingo">Domingo</label>
-            
-            <br><br>
+            <input type="checkbox" name="Sábado" id="Sábado" value="está disponivel">
+            <label for="Sábado">Sábado</label><br>
 
-            <li>
-                <label for="observação">OBSERVAÇÃO QUANTO A RESPOSTA ANTERIOR:</label><br>
-                <textarea name="observação" rolls="5" cols="40" id="observação"></textarea>
+            <input type="checkbox" name="Domingo" id="Domingo" value="está disponivel">
+            <label for="Domingo">Domingo</label>
+        
+        </ul>
 
-            </li>
-
-        </ol>
-
-            <button type="reset">Resetar</button>
-            <button type="submit">Enviar</button>
-
+        <li>
+         
+            <label for="observação">OBSERVAÇÃO QUANTO A RESPOSTA ANTERIOR:</label><br>
+            <textarea name="observação" rolls="5" cols="40" id="observação"></textarea>
+        </li>
+            </div>
+        </div>
+        <button type="reset">Resetar</button>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
