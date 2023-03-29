@@ -1,6 +1,6 @@
 body{
     color: black;
-    background-color: lightgoldenrodyellow;
+    background: linear-gradient(rgb(232, 235, 105),rgb(255, 249, 168) );
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     margin: 20px;
@@ -15,6 +15,17 @@ h5{
 h6{
     color: red;
 }
+
+.cabeçalho{
+    background: linear-gradient( rgba(0, 174, 255, 0.596), rgba(253, 48, 48, 0.575));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    box-shadow: 0px 10px 40px #00000056 ;
+    border-radius: 20px;
+}
+
 .perguntas{
     width: 100vw;
     height: 50vh;
@@ -34,7 +45,7 @@ h6{
     justify-content: start;
     align-items:flex-start;
     flex-direction: column;
-    background-color:rgba(248, 177, 91, 0.822);
+    background: linear-gradient( rgba(39, 167, 226, 0.856), rgba(233, 40, 40, 0.767));
     border-radius: 20px;
     padding: 5px;
     padding-left: 50px;
@@ -42,6 +53,7 @@ h6{
     box-shadow: 0px 10px 40px #00000056 ;
     font-size: 15px;
     margin:4px;
+    color:rgb(251, 255, 0);
 }
 
 .grupo2{
@@ -49,23 +61,25 @@ h6{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color:rgba(248, 177, 91, 0.822);
+    background: linear-gradient(rgba(233, 40, 40, 0.767),rgba(39, 167, 226, 0.856));
     border-radius: 20px;
     padding: 15px;
     box-shadow: 0px 10px 40px #00000056 ;
+    color:rgb(251, 255, 0);
 }
 
 .grupo3{
     display:flex;
     justify-content: start;
     flex-direction: column;
-    background-color:rgba(248, 177, 91, 0.822);
+    background: linear-gradient( rgba(39, 167, 226, 0.856), rgba(233, 40, 40, 0.767));
     border-radius: 20px;
     padding: 10px;
     padding-right: 50px;
     box-shadow: 0px 10px 40px #00000056 ;
     width: 300px;
     box-sizing: border-box;
+    color:rgb(251, 255, 0);
 }
 .grupo4{
     display:table;
@@ -73,7 +87,7 @@ h6{
     border-radius: 20px;
     padding: 15px;
     box-shadow: 0px 10px 40px #00000056 ;
-    background-color: #e0c271;
+    background-color:  rgba(255, 0, 0, 0.5);
 }
 
 .dados{
@@ -81,20 +95,10 @@ h6{
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background-color: coral;
-    color:aliceblue;
+    color:rgb(0, 0, 0);
     font-weight: 400;
     letter-spacing: 2px;
-}
-
-.cabeçalho{
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items:center;
-    box-shadow: 0px 10px 40px #00000056 ;
-    border-radius: 20px;
+    background-color:blanchedalmond;
 }
 
 img{
@@ -116,7 +120,8 @@ img{
     font-weight: 800;
     letter-spacing: 3px;
     margin-top: 5px;
-    color: #2b134b;
+    color: #ffee00;
     cursor: pointer;
     box-sizing: border-box;
+    background-color: rgba(94, 188, 231, 0.856);
 }
