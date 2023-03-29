@@ -63,7 +63,7 @@ h6{
     justify-content:center;
     padding: 10px;
 }
-.grupo1 .input{
+.grupo1 > input{
     width: 100%;
     border: none;
     border-radius: 10px;
