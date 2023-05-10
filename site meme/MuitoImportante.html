@@ -68,7 +68,7 @@
         const maxHeight = window.innerHeight - button.offsetHeight;
 
         function moveButton() {
-        const randomX = Math.floor(Math.random() * maxWidth)/2;
+        const randomX = Math.floor(Math.random() * maxWidth)*(2/7);
         const randomY = Math.floor(Math.random() * maxHeight)/2;
 
         button.style.left = `${randomX}px`;
