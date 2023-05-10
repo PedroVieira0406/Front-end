@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
+    <head>
+        <style>
         .botoes{
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content:space-evenly;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 30px;
+        height: 100vh;
+        top: 30%;
         }
         .titulo{
         display: flex;
         flex-direction:row;
         align-items: center;
         justify-content: center;
+        margin-top: 40px;
         }
         h1{
         font-style: oblique;
@@ -25,6 +28,7 @@
         background-size: cover;
         }
         #botao2 {
+        margin: 0 15px; 
         position: relative;
         width: 80px;
         height: 50px;
@@ -37,7 +41,7 @@
         }
         #botao1 {
         position: relative;
-
+        margin: 0 15px; 
         width: 70px;
         height: 50px;
         border-radius: 20%;
@@ -53,10 +57,11 @@
     <h1>Quem ama mais?</h1>
     </div>
     <div class="botoes">
-    <a href="https://www.youtube.com/shorts/R2EzQOnndx4">
-    <button id="botao1"> Isa <3 </button>
+    <!--colocar um link-->
+    <a href="">
+    <button id="botao1"> Botão1 </button>
     </a>
-    <button id="botao2"> Lacerda </button>
+    <button id="botao2"> Botão2 </button>
     </div>
     <script>
         const button = document.getElementById('botao2');
@@ -64,8 +69,8 @@
         const maxHeight = window.innerHeight - button.offsetHeight;
 
         function moveButton() {
-        const randomX = Math.floor(Math.random() * maxWidth);
-        const randomY = Math.floor(Math.random() * maxHeight);
+        const randomX = Math.floor(Math.random() * maxWidth)*(2/7);
+        const randomY = Math.floor(Math.random() * maxHeight)/2;
 
         button.style.left = `${randomX}px`;
         button.style.top = `${randomY}px`;
