@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
+<!-- saved from url=(0037)http://127.0.0.1:5500/tentativa2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
         .botoes{
         display: flex;
         justify-content: center;
@@ -49,16 +49,16 @@
         color: rgb(0, 0, 0); 
         cursor: pointer;padding: 10px 15px;
         box-shadow: 0px 10px 40px #00000056 ;
-         }
+        }
     </style>
-  </head>
+    </head>
   <body>
     <div class="titulo">
     <h1>Quem ama mais?</h1>
     </div>
     <div class="botoes">
     <a href="https://www.youtube.com/shorts/R2EzQOnndx4">
-    <button id="botao1"> Isa </button>
+    <button id="botao1"> Isa &lt;3 </button>
     </a>
     <button id="botao2"> Lacerda </button>
     </div>
@@ -68,7 +68,7 @@
         const maxHeight = window.innerHeight - button.offsetHeight;
 
         function moveButton() {
-        const randomX = Math.floor(Math.random() * maxWidth)*(2/7);
+        const randomX = Math.floor(Math.random() * maxWidth)/2;
         const randomY = Math.floor(Math.random() * maxHeight)/2;
 
         button.style.left = `${randomX}px`;
@@ -77,5 +77,43 @@
 
       button.addEventListener('click', moveButton);
     </script>
-  </body>
-</html>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
