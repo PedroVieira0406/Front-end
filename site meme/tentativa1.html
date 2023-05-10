@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site HTML</title>
+    <style>
+        
+        body{
+             background-color: rgb(102, 102, 240);}
+    </style>
+</head>
+<body>
+    <button id="isa">
+        &#U+1F498;
+        <p> Isa  </p>
+    </button>
+    <button id="lala"> Lala </button>
+    <script>
+        const button = document.getElementById('lala');
+
+button.addEventListener('click', () => {
+  const maxWidth = window.innerWidth - button.offsetWidth;
+  const maxHeight = window.innerHeight - button.offsetHeight;
+  
+  const randomX = Math.floor(Math.random(100) * maxWidth);
+  const randomY = Math.floor(Math.random(100) * maxHeight);
+  
+  button.style.left = `${randomX}px`;
+  button.style.top = `${randomY}px`;
+});
+    </script>
+</body>

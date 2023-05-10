@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        .botoes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+        }
+        .titulo{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        }
+        h1{
+        font-style: oblique;
+        color:aliceblue ;
+        }
+        
+        body{
+        background-image: url(https://i.pinimg.com/564x/55/fe/82/55fe82097aa510f77ab6aa2e4fc45191.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        #botao2 {
+        position: relative;
+        width: 80px;
+        height: 50px;
+        border-radius: 20%;
+        background-color: rgba(63, 196, 236, 0.664);
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        padding: 10px 15px;
+        box-shadow: 0px 10px 40px #00000056 ;
+        }
+        #botao1 {
+        position: relative;
+
+        width: 70px;
+        height: 50px;
+        border-radius: 20%;
+        background-color: rgba(248, 88, 221, 0.664);
+        color: rgb(0, 0, 0); 
+        cursor: pointer;padding: 10px 15px;
+        box-shadow: 0px 10px 40px #00000056 ;
+         }
+    </style>
+  </head>
+  <body>
+    <div class="titulo">
+    <h1>Quem ama mais?</h1>
+    </div>
+    <div class="botoes">
+    <a href="https://www.youtube.com/shorts/R2EzQOnndx4">
+    <button id="botao1"> Isa <3 </button>
+    </a>
+    <button id="botao2"> Lacerda </button>
+    </div>
+    <script>
+        const button = document.getElementById('botao2');
+        const maxWidth = window.innerWidth - button.offsetWidth;
+        const maxHeight = window.innerHeight - button.offsetHeight;
+
+        function moveButton() {
+        const randomX = Math.floor(Math.random() * maxWidth);
+        const randomY = Math.floor(Math.random() * maxHeight);
+
+        button.style.left = `${randomX}px`;
+        button.style.top = `${randomY}px`;
+      }
+
+      button.addEventListener('click', moveButton);
+    </script>
+  </body>
+</html>
