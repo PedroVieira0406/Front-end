@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Eventos</title>
+        <script>
+            function digaOla()
+            {
+                alert("Olá!");
+            }
+        </script>
+    </head>
+    <body onLoad="alert('Página carregou!');">
+        
+        <a href="#" onMouseOver="alert('Mouse passou por aqui');">Passe o mouse aqui</a>
+        <br><br><br>
+        
+        <a href="#" onClick="digaOla();">Clique aqui</a>
+        <br><br><br>
+        
+        <form>
+            <input type="text" value="Clique neste campo" onFocus="alert('Ativou o campo');">
+            <input type="text" value="Digite aqui" onKeyPress="alert('Digitou');">
+        </form>
+        
+    </body>
+</html>
